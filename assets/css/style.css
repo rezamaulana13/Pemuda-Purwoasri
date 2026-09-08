@@ -1,8 +1,7 @@
 /* =======================================================
    DESIGN TOKENS & ROOT VARIABLES
    Website Resmi Pemuda Purwoasri, Tegaldlimo, Banyuwangi
-   Theme: Semangat Merah Putih & Emas Pemuda (Crimson, Ruby & Pure Gold)
-   Karakter: Berani, Berjiwa Muda, Elegan, Berwibawa, Memukau Semua Kalangan
+   Theme: Bersih, Elegan, Berwibawa & Menarik (Clean White, Crimson Red & Gold Prestige)
    ======================================================= */
 :root {
   /* Merah Berani & Crimson Youth Core */
@@ -12,14 +11,24 @@
   --primary-ruby: #9f1239;
   --primary-rose: #f43f5e;
   --primary-light: #fff1f2;
-  --primary-glow: #fb7185;
+  --primary-glow: rgba(225, 29, 72, 0.15);
 
   /* Emas Prestasi & Amber Energy */
-  --accent-gold: #f59e0b;
-  --accent-amber: #fbbf24;
-  --accent-warm: #d97706;
-  --accent-cyan: #0284c7;
+  --accent-gold: #d97706;
+  --accent-amber: #f59e0b;
+  --accent-light-amber: #fef3c7;
   --accent-emerald: #10b981;
+  --accent-cyan: #0284c7;
+
+  /* Surfaces & Clean Backgrounds */
+  --surface-body: #f8fafc;
+  --surface-card: #ffffff;
+  --surface-subtle: #f1f5f9;
+  --text-main: #475569;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --border-subtle: #e2e8f0;
+  --border-focus: rgba(225, 29, 72, 0.3);
 
   /* Multi-Generation Target Badges */
   --badge-youth-bg: #ffe4e6;
@@ -29,25 +38,15 @@
   --badge-social-bg: #ecfdf5;
   --badge-social-text: #047857;
 
-  /* Surfaces & Clean Backgrounds */
-  --surface-body: #f8fafc;
-  --surface-card: #ffffff;
-  --surface-subtle: #f1f5f9;
-  --text-main: #334155;
-  --text-dark: #0f172a;
-  --text-muted: #64748b;
-  --border-subtle: rgba(225, 29, 72, 0.12);
-
   /* Radius & Shadows */
   --radius-pill: 50rem;
-  --radius-card: 1.35rem;
-  --radius-xl: 2rem;
-  --shadow-subtle: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
-  --shadow-card: 0 12px 32px -8px rgba(225, 29, 72, 0.08);
-  --shadow-float: 0 25px 50px -12px rgba(190, 18, 60, 0.28);
-  --shadow-red: 0 12px 30px rgba(225, 29, 72, 0.35);
-  --shadow-gold: 0 12px 28px rgba(245, 158, 11, 0.35);
-  --shadow-glow: 0 0 35px rgba(225, 29, 72, 0.4);
+  --radius-card: 1.25rem;
+  --radius-xl: 1.75rem;
+  --shadow-subtle: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+  --shadow-card: 0 10px 30px -5px rgba(15, 23, 42, 0.08);
+  --shadow-float: 0 20px 45px -10px rgba(225, 29, 72, 0.18);
+  --shadow-red: 0 8px 24px rgba(225, 29, 72, 0.3);
+  --shadow-gold: 0 8px 24px rgba(245, 158, 11, 0.25);
 }
 
 /* Base & Typography */
@@ -83,11 +82,11 @@ a {
    TOP ANNOUNCEMENT BAR
    ======================================================= */
 .top-announcement {
-  background: linear-gradient(90deg, #4c0519 0%, #881337 50%, #9f1239 100%);
-  color: #ffe4e6;
+  background: #0f172a;
+  color: #cbd5e1;
   font-size: 0.825rem;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .top-announcement a {
@@ -100,22 +99,22 @@ a {
 }
 
 /* =======================================================
-   NAVBAR & HEADER (PREMIUM GLASSMORPHISM)
+   NAVBAR & HEADER (CLEAN & ELEGANT)
    ======================================================= */
 .navbar-glass {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(225, 29, 72, 0.1);
-  padding: 0.85rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.9rem 0;
   transition: all 0.35s ease;
   z-index: 1030;
 }
 
 .navbar-glass.scrolled {
-  background: rgba(255, 255, 255, 0.98);
+  background: #ffffff;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-  padding: 0.65rem 0;
+  padding: 0.7rem 0;
 }
 
 .navbar-brand .brand-title-wrap .title {
@@ -151,19 +150,19 @@ a {
 
 .navbar-nav .nav-link.active {
   color: #ffffff !important;
-  background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
-  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.3);
+  background: var(--primary-red);
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
 }
 
 /* =======================================================
-   BUTTONS (YOUTH ENERGY & GLOW)
+   BUTTONS (CLEAN & MODERN)
    ======================================================= */
 .btn-hero-primary, .btn-primary {
   background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
   color: #ffffff !important;
   font-weight: 700;
   border-radius: var(--radius-pill);
-  padding: 0.85rem 2.25rem;
+  padding: 0.85rem 2rem;
   border: none;
   box-shadow: var(--shadow-red);
   transition: all 0.3s ease;
@@ -174,232 +173,259 @@ a {
 
 .btn-hero-primary:hover, .btn-primary:hover {
   background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 16px 32px rgba(225, 29, 72, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(225, 29, 72, 0.35);
 }
 
-.btn-hero-gold {
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-  color: #ffffff !important;
-  font-weight: 700;
-  border-radius: var(--radius-pill);
-  padding: 0.85rem 2.25rem;
-  border: none;
-  box-shadow: var(--shadow-gold);
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.btn-hero-gold:hover {
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 16px 32px rgba(245, 158, 11, 0.45);
-}
-
-.btn-outline, .btn-hero-glass {
-  background: rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(255, 255, 255, 0.45);
-  color: #ffffff !important;
-  font-weight: 700;
-  border-radius: var(--radius-pill);
-  padding: 0.85rem 2.25rem;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.btn-outline:hover, .btn-hero-glass:hover {
+.btn-outline-clean {
   background: #ffffff;
-  color: var(--primary-deep-red) !important;
-  transform: translateY(-3px);
-  border-color: #ffffff;
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+  border: 1.5px solid #cbd5e1;
+  color: #334155 !important;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  padding: 0.85rem 2rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-outline-clean:hover {
+  background: #f8fafc;
+  color: var(--primary-red) !important;
+  border-color: var(--primary-red);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
 /* =======================================================
-   HERO SECTION (SEMANGAT MERAH PUTIH & EMAS GRADIENT)
+   HERO SECTION (CLEAN 2-COLUMN ELEGANT DESIGN)
    ======================================================= */
-.travel-hero {
+.hero-clean-section {
   position: relative;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  padding: 110px 0 90px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  padding: 70px 0 60px 0;
+  border-bottom: 1px solid #e2e8f0;
   overflow: hidden;
-  background: linear-gradient(135deg, #4c0519 0%, #881337 35%, #be123c 70%, #e11d48 100%);
 }
 
-.hero-glow-sphere-1 {
-  position: absolute;
-  top: -10%;
-  right: 5%;
-  width: 550px;
-  height: 550px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(251, 191, 36, 0.35) 0%, rgba(245, 158, 11, 0) 70%);
-  filter: blur(40px);
-  pointer-events: none;
-}
-
-.hero-glow-sphere-2 {
-  position: absolute;
-  bottom: -15%;
-  left: 5%;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(225, 29, 72, 0.45) 0%, rgba(136, 19, 55, 0) 70%);
-  filter: blur(50px);
-  pointer-events: none;
-}
-
-.hero-bg-pattern {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
-  background-size: 28px 28px;
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.travel-hero .container {
-  position: relative;
-  z-index: 2;
-}
-
-.hero-tag {
+.hero-tag-clean {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(90deg, rgba(245, 158, 11, 0.25), rgba(225, 29, 72, 0.25));
-  border: 1px solid rgba(251, 191, 36, 0.5);
-  backdrop-filter: blur(12px);
-  color: #fef08a;
-  padding: 0.5rem 1.35rem;
+  background: var(--primary-light);
+  border: 1px solid rgba(225, 29, 72, 0.2);
+  color: var(--primary-crimson);
+  padding: 0.45rem 1.15rem;
   border-radius: var(--radius-pill);
   font-weight: 700;
   font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
 }
 
-.hero-title {
-  font-size: 3.5rem;
+.hero-title-clean {
+  font-size: 3.35rem;
   font-weight: 900;
-  line-height: 1.15;
-  color: #ffffff;
-  margin-bottom: 1.5rem;
+  line-height: 1.18;
+  color: var(--text-dark);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.03em;
 }
 
-.hero-title span {
-  background: linear-gradient(135deg, #fbbf24 0%, #fde047 50%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 30px rgba(251, 191, 36, 0.35);
+.text-gradient-red {
+  color: var(--primary-red);
+  position: relative;
+  display: inline-block;
 }
 
-.hero-subtitle {
-  font-size: 1.18rem;
-  color: #ffe4e6;
-  margin-bottom: 2.25rem;
-  max-width: 660px;
-  line-height: 1.8;
+.hero-subtitle-clean {
+  font-size: 1.15rem;
+  color: #475569;
+  margin-bottom: 2rem;
+  line-height: 1.75;
+  max-width: 580px;
 }
 
-.hero-buttons {
+.hero-buttons-clean {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2.75rem;
+  margin-bottom: 2rem;
 }
 
-/* Hero Stats Live Bar */
-.hero-stats-bar {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--radius-card);
-  padding: 1.75rem 2rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+/* Hero Trust Social Proof */
+.hero-trust-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
 }
 
-.hero-stat-box {
-  text-align: center;
-  position: relative;
+.hero-avatar-stack {
+  display: flex;
+  align-items: center;
 }
 
-.hero-stat-box:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 15%;
-  height: 70%;
-  width: 1px;
-  background: rgba(255, 255, 255, 0.2);
+.hero-avatar-stack img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-left: -10px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hero-stat-number {
-  font-family: 'Outfit', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: #fbbf24;
-  line-height: 1;
-  margin-bottom: 0.35rem;
-  text-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+.hero-avatar-stack img:first-child {
+  margin-left: 0;
 }
 
-.hero-stat-label {
-  font-size: 0.85rem;
-  color: #ffe4e6;
+.hero-trust-text {
+  font-size: 0.875rem;
+  color: #475569;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  line-height: 1.35;
+}
+
+.hero-trust-text strong {
+  color: var(--text-dark);
+  display: block;
+}
+
+/* Hero Showcase Image & Floating Badges */
+.hero-image-wrap {
+  position: relative;
+  padding: 1rem;
+}
+
+.hero-main-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  border: 4px solid #ffffff;
+}
+
+.floating-badge {
+  position: absolute;
+  background: #ffffff;
+  border-radius: var(--radius-card);
+  padding: 0.85rem 1.25rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 3;
+  animation: floatAnim 4s ease-in-out infinite;
+}
+
+.floating-badge-top {
+  top: 10%;
+  right: -10px;
+}
+
+.floating-badge-bottom {
+  bottom: 8%;
+  left: -10px;
+  animation-delay: 2s;
+}
+
+.badge-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.badge-icon-red {
+  background: var(--primary-light);
+  color: var(--primary-red);
+}
+
+.badge-icon-gold {
+  background: var(--accent-light-amber);
+  color: var(--accent-gold);
+}
+
+.floating-badge-title {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+.floating-badge-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+@keyframes floatAnim {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 /* =======================================================
-   INNER PAGE HERO HEADERS
+   STATISTICS BAR (CLEAN & ELEGANT 4-CARD GRID)
    ======================================================= */
-.page-header {
-  position: relative;
-  background: linear-gradient(135deg, #4c0519 0%, #881337 40%, #be123c 80%, #e11d48 100%);
-  color: #ffffff;
-  padding: 90px 0 65px 0;
-  overflow: hidden;
+.stats-section {
+  padding: 30px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
 }
 
-.page-header h1 {
-  font-size: 2.8rem;
+.stat-card-clean {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-card);
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-subtle);
+}
+
+.stat-card-clean:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(225, 29, 72, 0.25);
+}
+
+.stat-icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.stat-number-clean {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.95rem;
   font-weight: 900;
-  color: #ffffff;
-  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  line-height: 1.1;
+  margin-bottom: 0.2rem;
 }
 
-.page-header p {
-  color: #ffe4e6;
-  font-size: 1.15rem;
-  max-width: 620px;
-}
-
-.breadcrumb-item a {
-  color: #fbbf24;
+.stat-label-clean {
+  font-size: 0.85rem;
+  color: var(--text-muted);
   font-weight: 600;
-}
-
-.breadcrumb-item.active {
-  color: #ffffff;
 }
 
 /* =======================================================
@@ -443,7 +469,7 @@ a {
   background: #ffffff;
   border-radius: var(--radius-card);
   padding: 2.25rem 2rem;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid #e2e8f0;
   box-shadow: var(--shadow-subtle);
   transition: all 0.35s ease;
   height: 100%;
@@ -457,16 +483,16 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 5px;
-  background: linear-gradient(90deg, #e11d48, #fbbf24);
+  height: 4px;
+  background: var(--primary-red);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .gen-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-card);
-  border-color: rgba(225, 29, 72, 0.3);
+  border-color: rgba(225, 29, 72, 0.25);
 }
 
 .gen-card:hover::before {
@@ -474,13 +500,13 @@ a {
 }
 
 .gen-card-icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 1.1rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   margin-bottom: 1.5rem;
 }
 
@@ -499,15 +525,6 @@ a {
   color: var(--badge-social-text);
 }
 
-.gen-badge {
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.3rem 0.8rem;
-  border-radius: var(--radius-pill);
-  display: inline-block;
-  margin-bottom: 0.75rem;
-}
-
 /* =======================================================
    PROGRAM / KEGIATAN CARDS
    ======================================================= */
@@ -524,7 +541,7 @@ a {
 }
 
 .program-card:hover {
-  transform: translateY(-7px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-card);
   border-color: rgba(225, 29, 72, 0.25);
 }
@@ -543,7 +560,7 @@ a {
 }
 
 .program-card:hover .program-img-wrap img {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 
 .program-category {
@@ -557,7 +574,6 @@ a {
   font-size: 0.75rem;
   padding: 0.35rem 0.85rem;
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(251, 191, 36, 0.3);
 }
 
 .program-body {
@@ -598,7 +614,7 @@ a {
 }
 
 .program-progress-bar {
-  height: 7px;
+  height: 6px;
   border-radius: 4px;
   background-color: #f1f5f9;
   overflow: hidden;
@@ -607,7 +623,7 @@ a {
 
 .program-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #e11d48, #fbbf24);
+  background: var(--primary-red);
   border-radius: 4px;
 }
 
@@ -620,6 +636,7 @@ a {
   overflow: hidden;
   height: 250px;
   box-shadow: var(--shadow-subtle);
+  border: 1px solid #e2e8f0;
 }
 
 .gallery-item img {
@@ -632,7 +649,7 @@ a {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(76, 5, 25, 0.9) 0%, rgba(136, 19, 55, 0.3) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.2) 60%, transparent 100%);
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -643,7 +660,7 @@ a {
 }
 
 .gallery-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -657,7 +674,7 @@ a {
   background: #ffffff;
   border-radius: var(--radius-card);
   padding: 2.25rem;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid #e2e8f0;
   box-shadow: var(--shadow-subtle);
   position: relative;
   height: 100%;
@@ -729,31 +746,34 @@ a {
 }
 
 /* =======================================================
-   CTA BANNER (SEMANGAT JUANG PEMUDA)
+   CTA BANNER (CLEAN & ELEGANT)
    ======================================================= */
-.cta-banner {
-  background: linear-gradient(135deg, #4c0519 0%, #881337 45%, #be123c 100%);
+.cta-banner-clean {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   border-radius: var(--radius-xl);
   padding: 4.5rem 3rem;
   color: #ffffff;
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-float);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.cta-banner .cta-glow {
-  position: absolute;
-  top: -30%;
-  right: -10%;
-  width: 450px;
-  height: 450px;
-  background: radial-gradient(circle, rgba(251, 191, 36, 0.4) 0%, transparent 70%);
-  filter: blur(40px);
-  pointer-events: none;
+.cta-banner-clean h2 {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.cta-banner-clean p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  max-width: 650px;
 }
 
 /* =======================================================
-   FOOTER (EXECUTIVE DARK WITH CRIMSON & GOLD ACCENT)
+   FOOTER (EXECUTIVE DARK WITH CLEAN DETAILS)
    ======================================================= */
 .footer-dark {
   background: #0f172a;
@@ -779,7 +799,7 @@ a {
   bottom: -6px;
   width: 32px;
   height: 3px;
-  background: var(--accent-gold);
+  background: var(--primary-red);
   border-radius: 2px;
 }
 
@@ -788,7 +808,7 @@ a {
 }
 
 .footer-dark a:hover {
-  color: #fbbf24;
+  color: #ffffff;
   padding-left: 4px;
 }
 
@@ -835,14 +855,14 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.85rem;
-  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
   z-index: 1040;
   transition: all 0.3s ease;
 }
 
 .float-wa:hover {
-  transform: scale(1.1) rotate(10deg);
-  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+  transform: scale(1.08);
+  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.55);
 }
 
 .scroll-top {
@@ -858,7 +878,7 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.35);
+  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.3);
   z-index: 1040;
   opacity: 0;
   visibility: hidden;
@@ -872,35 +892,33 @@ a {
 
 .scroll-top:hover {
   background: #be123c;
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 /* =======================================================
    RESPONSIVE DESIGN
    ======================================================= */
 @media (max-width: 991px) {
-  .hero-title {
+  .hero-title-clean {
     font-size: 2.5rem;
   }
-  .hero-stats-bar {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-main-img {
+    height: 380px;
   }
-  .hero-stat-box:nth-child(2)::after {
-    display: none;
+  .floating-badge {
+    position: static;
+    margin-top: 1rem;
   }
 }
 
 @media (max-width: 576px) {
-  .hero-title {
+  .hero-title-clean {
     font-size: 2rem;
   }
-  .hero-stats-bar {
-    grid-template-columns: 1fr;
-  }
-  .hero-stat-box::after {
-    display: none !important;
-  }
-  .cta-banner {
+  .cta-banner-clean {
     padding: 2.5rem 1.5rem;
+  }
+  .hero-main-img {
+    height: 300px;
   }
 }
