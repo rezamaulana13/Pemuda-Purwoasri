@@ -1,35 +1,40 @@
 /* =======================================================
    DESIGN TOKENS & ROOT VARIABLES
    Website Resmi Pemuda Purwoasri, Tegaldlimo, Banyuwangi
-   Theme: Bersih, Elegan, Patriotik & Berwibawa
-   Garuda Pancasila & Semangat Merah Putih
+   Theme: Deep Crimson, Maroon & Radiant Gold Gradient
+   Harmonized with Clean Modern Content Surfaces
    ======================================================= */
 :root {
-  /* Merah Berani & Crimson Youth Core */
+  /* Crimson, Maroon & Patriotik Red Core */
   --primary-red: #e11d48;
   --primary-crimson: #be123c;
   --primary-deep-red: #881337;
+  --primary-maroon-dark: #3b0716;
+  --primary-maroon-night: #24050d;
   --primary-ruby: #9f1239;
   --primary-rose: #f43f5e;
   --primary-light: #fff1f2;
-  --primary-glow: rgba(225, 29, 72, 0.15);
+  --primary-glow: rgba(225, 29, 72, 0.18);
 
   /* Emas Prestasi & Amber Energy */
   --accent-gold: #fbbf24;
+  --accent-gold-light: #fde047;
   --accent-amber: #f59e0b;
   --accent-dark-amber: #d97706;
   --accent-light-amber: #fef3c7;
   --accent-emerald: #10b981;
   --accent-cyan: #0284c7;
 
-  /* Surfaces & Clean Backgrounds */
+  /* Surfaces & Harmonious Clean Backgrounds */
   --surface-body: #f8fafc;
+  --surface-warm: #fcfbfa;
   --surface-card: #ffffff;
   --surface-subtle: #f1f5f9;
   --text-main: #475569;
   --text-dark: #0f172a;
   --text-muted: #64748b;
   --border-subtle: #e2e8f0;
+  --border-warm: #fed7aa;
 
   /* Multi-Generation Target Badges */
   --badge-youth-bg: #ffe4e6;
@@ -39,7 +44,7 @@
   --badge-social-bg: #ecfdf5;
   --badge-social-text: #047857;
 
-  /* Radius & Shadows */
+  /* Radius & Harmonized Shadows */
   --radius-pill: 50rem;
   --radius-card: 1.25rem;
   --radius-xl: 1.75rem;
@@ -103,10 +108,23 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 800;
   letter-spacing: -0.025em;
   color: var(--text-dark);
+  line-height: 1.25;
+}
+
+p, .text-main {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-main);
+  line-height: 1.75;
+}
+
+.btn {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2px;
 }
 
 a {
@@ -124,11 +142,11 @@ img {
    TOP ANNOUNCEMENT BAR
    ======================================================= */
 .top-announcement {
-  background: #0f172a;
+  background: linear-gradient(90deg, #27060f 0%, #151a28 60%, #0d1322 100%);
   color: #cbd5e1;
   font-size: 0.825rem;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(251, 191, 36, 0.16);
 }
 
 .top-announcement a {
@@ -161,29 +179,25 @@ img {
 
 .navbar-brand img {
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 50%;
   transition: transform 0.25s ease;
 }
 
 .navbar-brand:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
-.navbar-brand .brand-title-wrap .title {
-  font-family: 'Outfit', sans-serif;
+.navbar-brand .brand-title {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 800;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   color: var(--text-dark);
-  line-height: 1.1;
-  display: block;
+  letter-spacing: -0.02em;
+  transition: color 0.25s ease;
 }
 
-.navbar-brand .brand-title-wrap .sub {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--accent-dark-amber);
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
+.navbar-brand:hover .brand-title {
+  color: var(--primary-crimson);
 }
 
 .navbar-nav .nav-link {
@@ -295,6 +309,7 @@ img {
 
 /* =======================================================
    HERO SECTION (FULL BACKGROUND GARUDA PANCASILA & MERDEKA)
+   Deep Crimson Maroon to Midnight Navy with Radiant Gold Glow
    ======================================================= */
 .hero-garuda-section {
   position: relative;
@@ -302,7 +317,8 @@ img {
   display: flex;
   align-items: center;
   color: #ffffff;
-  padding: 100px 0 80px 0;
+  padding: 110px 0 90px 0;
+  background-color: var(--primary-maroon-night);
   background-image: url('../img/hero-garuda.webp');
   background-size: cover;
   background-position: center;
@@ -313,38 +329,52 @@ img {
 .hero-garuda-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, 
-    rgba(15, 23, 42, 0.72) 0%, 
-    rgba(15, 23, 42, 0.82) 45%, 
-    rgba(15, 23, 42, 0.95) 100%
-  );
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
+  background: 
+    radial-gradient(circle at 80% 35%, rgba(251, 191, 36, 0.14) 0%, transparent 50%),
+    linear-gradient(90deg, 
+      rgba(24, 4, 10, 0.84) 0%, 
+      rgba(35, 6, 16, 0.68) 45%, 
+      rgba(13, 19, 34, 0.40) 75%,
+      rgba(13, 19, 34, 0.22) 100%
+    );
   z-index: 1;
+}
+
+/* Smooth Soft Blend into Content Surface */
+.hero-garuda-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--surface-body));
+  z-index: 2;
+  pointer-events: none;
 }
 
 .hero-garuda-section .container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hero-tag-garuda {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(251, 191, 36, 0.18);
-  border: 1px solid rgba(251, 191, 36, 0.45);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #fef08a;
-  padding: 0.5rem 1.35rem;
+  background: rgba(251, 191, 36, 0.16);
+  border: 1px solid rgba(251, 191, 36, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fde047;
+  padding: 0.5rem 1.4rem;
   border-radius: var(--radius-pill);
   font-weight: 700;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.8px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.25);
 }
 
 .hero-title-garuda {
@@ -354,22 +384,24 @@ img {
   color: #ffffff;
   margin-bottom: 1.35rem;
   letter-spacing: -0.025em;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
 
 .hero-title-garuda span {
-  background: linear-gradient(135deg, #fbbf24 0%, #fde047 50%, #ffffff 100%);
+  background: linear-gradient(135deg, #fbbf24 0%, #fde047 45%, #ffffff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 30px rgba(251, 191, 36, 0.35);
+  text-shadow: 0 0 35px rgba(251, 191, 36, 0.45);
 }
 
 .hero-subtitle-garuda {
   font-size: 1.18rem;
-  color: #f1f5f9;
+  color: #f8fafc;
   margin-bottom: 2.25rem;
   max-width: 680px;
   line-height: 1.8;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
 .hero-buttons-garuda {
@@ -379,51 +411,68 @@ img {
   margin-bottom: 3rem;
 }
 
-/* Hero Stats Bar in Full Background */
-.hero-stats-garuda {
+/* Hero 4 Quick Pillars Grid (Modern Frosted Micro-Cards) */
+.hero-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.hero-pillar-card {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-card);
-  padding: 1.75rem 2rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  padding: 1.15rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.hero-stat-box {
-  text-align: center;
-  position: relative;
+.hero-pillar-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(251, 191, 36, 0.5);
+  box-shadow: 0 16px 35px rgba(225, 29, 72, 0.28);
 }
 
-.hero-stat-box:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 15%;
-  height: 70%;
-  width: 1px;
-  background: rgba(255, 255, 255, 0.2);
+.pillar-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(225, 29, 72, 0.85) 0%, rgba(245, 158, 11, 0.9) 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.35);
 }
 
-.hero-stat-number {
+.pillar-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar-title {
+  color: #ffffff;
   font-family: 'Outfit', sans-serif;
-  font-size: 2.3rem;
-  font-weight: 800;
-  color: #fbbf24;
-  line-height: 1;
-  margin-bottom: 0.35rem;
-  text-shadow: 0 0 20px rgba(251, 191, 36, 0.35);
+  font-weight: 700;
+  font-size: 0.98rem;
+  margin-bottom: 0.15rem;
+  line-height: 1.2;
 }
 
-.hero-stat-label {
-  font-size: 0.825rem;
+.pillar-sub {
   color: #e2e8f0;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-size: 0.78rem;
+  margin-bottom: 0;
+  line-height: 1.35;
 }
 
 /* =======================================================
@@ -431,11 +480,14 @@ img {
    ======================================================= */
 .page-header {
   position: relative;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #334155 100%);
+  background: 
+    radial-gradient(circle at 85% 20%, rgba(251, 191, 36, 0.18) 0%, transparent 45%),
+    linear-gradient(135deg, #3b0716 0%, #1e101f 50%, #0d1322 100%);
   color: #ffffff;
-  padding: 80px 0 55px 0;
+  padding: 85px 0 60px 0;
   overflow: hidden;
-  border-bottom: 3px solid var(--primary-red);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #e11d48 0%, #f59e0b 50%, #e11d48 100%) 1;
 }
 
 .page-header h1 {
@@ -443,10 +495,11 @@ img {
   font-weight: 900;
   color: #ffffff;
   margin-bottom: 0.75rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .page-header p {
-  color: #cbd5e1;
+  color: #e2e8f0;
   font-size: 1.1rem;
   max-width: 620px;
 }
@@ -461,17 +514,20 @@ img {
 }
 
 .section-tag {
-  display: inline-block;
-  padding: 0.4rem 1.1rem;
-  background: var(--primary-light);
-  color: var(--primary-crimson);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.25rem;
+  background: linear-gradient(135deg, #fff1f2 0%, #fef3c7 100%);
+  color: #9f1239;
   font-weight: 700;
   font-size: 0.825rem;
   border-radius: var(--radius-pill);
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  margin-bottom: 0.75rem;
-  border: 1px solid rgba(225, 29, 72, 0.2);
+  margin-bottom: 0.85rem;
+  border: 1px solid rgba(225, 29, 72, 0.22);
+  box-shadow: 0 2px 10px rgba(225, 29, 72, 0.08);
 }
 
 .section-title {
@@ -494,7 +550,7 @@ img {
   background: #ffffff;
   border-radius: var(--radius-card);
   padding: 2.25rem 2rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(226, 232, 240, 0.9);
   box-shadow: var(--shadow-subtle);
   transition: all 0.35s ease;
   height: 100%;
@@ -509,7 +565,7 @@ img {
   left: 0;
   width: 100%;
   height: 4px;
-  background: var(--primary-red);
+  background: linear-gradient(90deg, var(--primary-red) 0%, var(--accent-gold) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -774,14 +830,16 @@ img {
    CTA BANNER (CLEAN & ELEGANT)
    ======================================================= */
 .cta-banner-clean {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: 
+    radial-gradient(circle at 88% 20%, rgba(251, 191, 36, 0.18) 0%, transparent 45%),
+    linear-gradient(135deg, #3b0716 0%, #1a0b1b 50%, #0d1322 100%);
   border-radius: var(--radius-xl);
   padding: 4.5rem 3rem;
   color: #ffffff;
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-card);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 45px rgba(24, 5, 12, 0.25);
+  border: 1px solid rgba(251, 191, 36, 0.25);
 }
 
 .cta-banner-clean h2 {
@@ -930,10 +988,11 @@ img {
    FOOTER (EXECUTIVE DARK WITH CLEAN DETAILS)
    ======================================================= */
 .footer-dark {
-  background: #0f172a;
+  background: linear-gradient(180deg, #0f172a 0%, #080c16 100%);
   color: #cbd5e1;
   padding: 80px 0 30px 0;
-  border-top: 3px solid var(--primary-red);
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #e11d48 0%, #f59e0b 50%, #e11d48 100%) 1;
   position: relative;
   width: 100%;
   overflow-x: hidden;
@@ -1073,14 +1132,9 @@ img {
     font-size: 1.05rem;
   }
 
-  .hero-stats-garuda {
+  .hero-pillars-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 1.5rem;
-    gap: 1.25rem;
-  }
-
-  .hero-stat-box:nth-child(2)::after {
-    display: none;
+    gap: 1rem;
   }
 
   .navbar-collapse {
@@ -1195,18 +1249,9 @@ img {
     justify-content: center;
   }
 
-  .hero-stats-garuda {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1.25rem 1rem;
-    gap: 1rem;
-  }
-
-  .hero-stat-number {
-    font-size: 1.75rem;
-  }
-
-  .hero-stat-label {
-    font-size: 0.72rem;
+  .hero-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
 
   .gen-card, .testi-card, .program-body {
