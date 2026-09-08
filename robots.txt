@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pemuda-purwoasri.vercel.app/sitemap.xml
