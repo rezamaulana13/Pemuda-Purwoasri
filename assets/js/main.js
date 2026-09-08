@@ -7,7 +7,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
-  const DEFAULT_WA_NUMBER = '6281234567890'; // Nomor WhatsApp Admin / Sekretariat Pemuda Purwoasri
+  const DEFAULT_WA_NUMBER = '6287865503625'; // Nomor WhatsApp Admin / Sekretariat Pemuda Purwoasri
 
   // 1. Scroll-top Button Logic
   const scrollTop = document.querySelector('#scrollTopBtn') || document.querySelector('.scroll-top');

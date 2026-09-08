@@ -27,7 +27,7 @@ Platform digital terpadu untuk menyalurkan aspirasi masyarakat desa, publikasi k
 - **Alamat**: Kompleks Balai Desa Purwoasri, Jl. Raya Purwoasri No. 01, Kec. Tegaldlimo, Kab. Banyuwangi, Jawa Timur 68484
 - **Koordinat GEO**: `-8.5447, 114.2882`
 - **Email**: `sekretariat@pemudapurwoasri.id`
-- **WhatsApp**: `+62 812-3456-7890`
+- **WhatsApp**: `+62 878-6550-3625`
 
 ---
 &copy; 2026 **Pemuda Purwoasri Tegaldlimo Banyuwangi**. Hak Cipta Dilindungi.
