@@ -159,6 +159,16 @@ img {
   padding: 0.65rem 0;
 }
 
+.navbar-brand img {
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.25s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
 .navbar-brand .brand-title-wrap .title {
   font-family: 'Outfit', sans-serif;
   font-weight: 800;
