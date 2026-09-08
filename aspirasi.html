@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Kotak Aspirasi & Suara Pemuda | Pemuda Purwoasri Tegaldlimo Banyuwangi</title>
+  <title>Kotak Aspirasi & Suara Warga | Pemuda Purwoasri Tegaldlimo Banyuwangi</title>
   <meta name="description" content="Salurkan aspirasi, gagasan, usulan fasilitas, dan ide kreatif warga untuk kemajuan Desa Purwoasri, Kecamatan Tegaldlimo, Kabupaten Banyuwangi secara transparan." />
   <meta name="keywords" content="aspirasi pemuda purwoasri, suara warga purwoasri, usulan kegiatan tegaldlimo, karang taruna purwoasri banyuwangi, transparansi desa purwoasri" />
   <meta name="author" content="Organisasi Pemuda Purwoasri" />
@@ -20,12 +20,19 @@
   <meta name="geo.position" content="-8.5447;114.2882" />
   <meta name="ICBM" content="-8.5447, 114.2882" />
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kotak Aspirasi & Suara Warga Pemuda Purwoasri" />
+  <meta property="og:description" content="Salurkan aspirasi dan gagasan demi kemajuan bersama di Desa Purwoasri, Tegaldlimo, Banyuwangi." />
+  <meta property="og:url" content="https://pemuda-purwoasri.vercel.app/aspirasi" />
+  <meta property="og:image" content="https://pemuda-purwoasri.vercel.app/assets/img/hero-garuda.webp" />
+
   <!-- Google Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -46,269 +53,273 @@
   </aside>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-glass sticky-top" id="mainNavbar">
-    <div class="container">
-      <!-- Logo Branding -->
-      <a class="navbar-brand d-flex align-items-center gap-2" href="/">
-        <img src="assets/img/favicon.svg" alt="Logo Pemuda Purwoasri" width="44" height="44" class="rounded-3 shadow-sm" />
-        <div class="brand-title-wrap">
-          <span class="title">Pemuda <span style="color: var(--primary-red);">Purwoasri</span></span>
-          <span class="sub d-block">Tegaldlimo • Banyuwangi</span>
-        </div>
-      </a>
+  <header class="sticky-top">
+    <div class="navbar navbar-expand-lg navbar-glass" id="mainNavbar">
+      <div class="container">
+        <!-- Logo Branding -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+          <img src="assets/img/favicon.svg" alt="Logo Pemuda Purwoasri" width="44" height="44" class="rounded-3 shadow-sm" />
+          <div class="brand-title-wrap">
+            <span class="title">Pemuda <span style="color: var(--primary-red);">Purwoasri</span></span>
+            <span class="sub d-block">Tegaldlimo • Banyuwangi</span>
+          </div>
+        </a>
 
-      <!-- Hamburger Toggler -->
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navPurwoasri" aria-controls="navPurwoasri" aria-expanded="false" aria-label="Buka Navigasi">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Hamburger Toggler -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navPurwoasri" aria-controls="navPurwoasri" aria-expanded="false" aria-label="Buka Navigasi">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Nav Links -->
-      <div class="collapse navbar-collapse" id="navPurwoasri">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-1 my-3 my-lg-0">
-          <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="tentang-kami">Tentang Kami</a></li>
-          <li class="nav-item"><a class="nav-link" href="kegiatan">Kegiatan</a></li>
-          <li class="nav-item"><a class="nav-link active" href="aspirasi">Aspirasi</a></li>
-          <li class="nav-item"><a class="nav-link" href="kontak">Kontak</a></li>
-        </ul>
+        <!-- Nav Links -->
+        <nav class="collapse navbar-collapse" id="navPurwoasri">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1 my-3 my-lg-0">
+            <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="tentang-kami">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="kegiatan">Kegiatan</a></li>
+            <li class="nav-item"><a class="nav-link active" href="aspirasi">Aspirasi</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontak">Kontak</a></li>
+          </ul>
 
-        <!-- CTA Header -->
-        <div class="ms-lg-3 mt-2 mt-lg-0">
-          <button class="btn btn-hero-primary btn-sm px-3 py-2" data-bs-toggle="modal" data-bs-target="#modalGabung">
-            <i class="bi bi-person-plus-fill"></i> Gabung Relawan
-          </button>
-        </div>
+          <!-- CTA Header -->
+          <div class="ms-lg-3 mt-2 mt-lg-0">
+            <button class="btn btn-hero-primary btn-sm px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalGabung">
+              <i class="bi bi-person-plus-fill"></i> Gabung Relawan
+            </button>
+          </div>
+        </nav>
       </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="page-header text-center">
-    <div class="container">
-      <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">
-        <i class="bi bi-megaphone-fill"></i> Partisipasi Warga
-      </span>
-      <h1 class="display-5 fw-bold mb-3">Kotak Aspirasi & Suara Warga</h1>
-      <p class="lead text-white-50 mx-auto" style="max-width: 650px;">
-        Saluran resmi untuk menyampaikan saran, usulan acara, pengaduan fasilitas, dan ide inovatif demi kemajuan Desa Purwoasri, Tegaldlimo.
-      </p>
     </div>
   </header>
 
-  <!-- Form & Transparency Section -->
-  <section class="section-spacing">
-    <div class="container">
-      <div class="row g-5">
-        
-        <!-- Kolom Kiri: Form Input -->
-        <div class="col-lg-7">
-          <div class="form-box">
-            <span class="section-badge"><i class="bi bi-send-fill"></i> Tulis Aspirasi</span>
-            <h3 class="fw-bold mb-3">Sampaikan Gagasan Anda</h3>
-            <p class="small text-muted mb-4">Setiap masukan akan dicatat dalam agenda rapat mingguan pengurus dan dikoordinasikan bersama perangkat desa.</p>
+  <main class="main">
 
-            <form onsubmit="event.preventDefault(); alert('Terima kasih! Aspirasi Anda telah berhasil kami simpan dan akan segera diverifikasi oleh tim pengurus.'); this.reset();">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label small fw-semibold">Nama Lengkap (Boleh Anonim)</label>
-                  <input type="text" class="form-control rounded-3" placeholder="Contoh: Warga Dusun Krajan" />
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label small fw-semibold">Nomor Kontak / WhatsApp (Opsional)</label>
-                  <input type="tel" class="form-control rounded-3" placeholder="08xxxxxxxxxx" />
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label small fw-semibold">Kategori Usulan</label>
-                  <select class="form-select rounded-3">
-                    <option selected>Fasilitas Olahraga & Kepemudaan</option>
-                    <option>Kebersihan & Lingkungan Hidup</option>
-                    <option>Pemberdayaan UMKM / Usaha Pemuda</option>
-                    <option>Bakti Sosial & Pendidikan Anak</option>
-                    <option>Lainnya</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label small fw-semibold">Wilayah Dusun</label>
-                  <select class="form-select rounded-3">
-                    <option selected>Dusun Krajan</option>
-                    <option>Dusun Sumberasri</option>
-                    <option>Dusun Purwosari</option>
-                    <option>Seluruh Desa Purwoasri</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <label class="form-label small fw-semibold">Judul / Topik Aspirasi</label>
-                  <input type="text" class="form-control rounded-3" placeholder="Contoh: Perbaikan Jaring Lapangan Voli Dusun Krajan" required />
-                </div>
-                <div class="col-12">
-                  <label class="form-label small fw-semibold">Uraian Ide / Keluhan Lengkap</label>
-                  <textarea class="form-control rounded-3" rows="5" placeholder="Jelaskan secara detail gagasan, solusi, atau kendala yang Anda amati..." required></textarea>
-                </div>
-                <div class="col-12 mt-4">
-                  <button type="submit" class="btn btn-success rounded-pill px-4 py-2 fw-semibold w-100">
-                    <i class="bi bi-send-check-fill me-1"></i> Kirimkan Aspirasi Sekarang
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <!-- Kolom Kanan: Rekap Transparansi Aspirasi Masuk -->
-        <div class="col-lg-5">
-          <span class="section-badge"><i class="bi bi-activity"></i> Transparansi Aksi</span>
-          <h3 class="fw-bold mb-3">Status Aspirasi Terkini</h3>
-          <p class="small text-muted mb-4">Bukti nyata bahwa suara Anda kami dengar dan kami tindak lanjuti secara nyata.</p>
-
-          <div class="d-flex flex-column gap-3">
-            
-            <div class="p-3 bg-white rounded-4 border shadow-sm">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="small fw-bold text-dark">Penerangan Lampu Lapangan Voli</span>
-                <span class="status-badge-done"><i class="bi bi-check2"></i> Terealisasi</span>
-              </div>
-              <p class="small text-muted mb-1">Pemasangan 4 unit lampu sorot LED di Lapangan Voli Dusun Krajan telah selesai bersama warga.</p>
-              <small class="text-secondary" style="font-size: 0.75rem;">Selesai: Agustus 2026</small>
-            </div>
-
-            <div class="p-3 bg-white rounded-4 border shadow-sm">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="small fw-bold text-dark">Tempat Sampah Terpilah di Balai Desa</span>
-                <span class="status-badge-done"><i class="bi bi-check2"></i> Terealisasi</span>
-              </div>
-              <p class="small text-muted mb-1">Pengadaan 6 set tempat sampah organik dan anorganik di fasilitas umum desa.</p>
-              <small class="text-secondary" style="font-size: 0.75rem;">Selesai: Juli 2026</small>
-            </div>
-
-            <div class="p-3 bg-white rounded-4 border shadow-sm">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="small fw-bold text-dark">Pelatihan Sablon & Desain Digital</span>
-                <span class="status-badge-process"><i class="bi bi-hourglass-split"></i> Dalam Proses</span>
-              </div>
-              <p class="small text-muted mb-1">Penyusunan modul materi dan koordinasi mentor dari Banyuwangi untuk bulan depan.</p>
-              <small class="text-secondary" style="font-size: 0.75rem;">Tahap Koordinasi Pemdes</small>
-            </div>
-
-          </div>
-        </div>
-
+    <!-- Page Header -->
+    <header class="page-header text-center">
+      <div class="container">
+        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">
+          <i class="bi bi-megaphone-fill"></i> Partisipasi Warga
+        </span>
+        <h1 class="display-5 fw-bold mb-3">Kotak Aspirasi & Suara Warga</h1>
+        <p class="text-white-50 mx-auto" style="max-width: 650px;">
+          Saluran terbuka untuk menyampaikan saran, usulan fasilitas, ide kreatif, dan aspirasi demi kemajuan Desa Purwoasri, Tegaldlimo.
+        </p>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Footer -->
-  <footer class="footer-master" role="contentinfo">
+    <!-- Form & Transparency Section -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          
+          <!-- Kolom Kiri: Form Input Smart WA -->
+          <div class="col-lg-7">
+            <div class="form-box">
+              <span class="section-badge"><i class="bi bi-send-fill"></i> Tulis Aspirasi</span>
+              <h3 class="fw-bold mb-2">Sampaikan Gagasan Anda</h3>
+              <p class="small text-muted mb-4">Setiap aspirasi akan diteruskan langsung ke WhatsApp pengurus pemuda untuk dibahas pada musyawarah mingguan.</p>
+
+              <form id="formAspirasi">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="namaAspirasi" class="form-label small fw-semibold">Nama Lengkap / Inisial</label>
+                    <input type="text" class="form-control rounded-3" id="namaAspirasi" name="nama" placeholder="Contoh: Warga Purwoasri" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="dusunAspirasi" class="form-label small fw-semibold">Asal Dusun</label>
+                    <select class="form-select rounded-3" id="dusunAspirasi" name="dusun" required>
+                      <option value="" disabled selected>Pilih Dusun</option>
+                      <option value="Krajan">Dusun Krajan</option>
+                      <option value="Purwosari">Dusun Purwosari</option>
+                      <option value="Sambirejo">Dusun Sambirejo</option>
+                      <option value="Gladakkembar">Dusun Gladakkembar</option>
+                      <option value="Luar Purwoasri">Luar Purwoasri</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="kategoriAspirasi" class="form-label small fw-semibold">Kategori Usulan</label>
+                    <select class="form-select rounded-3" id="kategoriAspirasi" name="kategori" required>
+                      <option value="Fasilitas Olahraga">Fasilitas Olahraga & Kepemudaan</option>
+                      <option value="Gotong Royong & Lingkungan">Gotong Royong & Kebersihan Lingkungan</option>
+                      <option value="Inkubasi UMKM">Pemberdayaan UMKM & Pelatihan Kerja</option>
+                      <option value="Bakti Sosial & Edukasi">Bakti Sosial & Bimbingan Belajar Anak</option>
+                      <option value="Lainnya">Usulan / Saran Umum</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="isiAspirasi" class="form-label small fw-semibold">Uraian Aspirasi & Masukan</label>
+                    <textarea class="form-control rounded-3" id="isiAspirasi" name="pesan" rows="5" placeholder="Jelaskan secara rinci gagasan, solusi, atau usulan yang ingin Anda sampaikan..." required></textarea>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-hero-primary rounded-pill px-4 py-3 fw-semibold w-100">
+                      <i class="bi bi-send-fill me-1"></i> Kirimkan Aspirasi via WhatsApp
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Rekap Transparansi Aspirasi Masuk -->
+          <div class="col-lg-5">
+            <span class="section-badge"><i class="bi bi-activity"></i> Transparansi Aksi</span>
+            <h3 class="fw-bold mb-2">Status Aspirasi Terkini</h3>
+            <p class="small text-muted mb-4">Bukti nyata bahwa suara Anda kami dengar dan kami kawal secara nyata bersama pemerintah desa.</p>
+
+            <div class="d-flex flex-column gap-3">
+              
+              <div class="p-3 bg-white rounded-4 border shadow-sm">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="small fw-bold text-dark">Penerangan Lampu Lapangan Voli</span>
+                  <span class="status-badge-done"><i class="bi bi-check2"></i> Terealisasi</span>
+                </div>
+                <p class="small text-muted mb-1">Pemasangan lampu sorot LED di Lapangan Voli Dusun Krajan telah selesai terlaksana bersama pemuda & warga.</p>
+                <small class="text-secondary" style="font-size: 0.75rem;">Selesai: Agustus 2026</small>
+              </div>
+
+              <div class="p-3 bg-white rounded-4 border shadow-sm">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="small fw-bold text-dark">Tempat Sampah Terpilah Balai Desa</span>
+                  <span class="status-badge-done"><i class="bi bi-check2"></i> Terealisasi</span>
+                </div>
+                <p class="small text-muted mb-1">Pengadaan 6 set tempat sampah terpilah di ruang publik demi kenyamanan lingkungan desa.</p>
+                <small class="text-secondary" style="font-size: 0.75rem;">Selesai: Juli 2026</small>
+              </div>
+
+              <div class="p-3 bg-white rounded-4 border shadow-sm">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="small fw-bold text-dark">Pelatihan Sablon & Digital Printing</span>
+                  <span class="status-badge-process"><i class="bi bi-hourglass-split"></i> Dalam Proses</span>
+                </div>
+                <p class="small text-muted mb-1">Penyusunan modul pelatihan dan penjadwalan mentor praktisi untuk UMKM muda Purwoasri.</p>
+                <small class="text-secondary" style="font-size: 0.75rem;">Tahap: Koordinasi Narasumber</small>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer-dark">
     <div class="container">
-      <div class="row g-4 mb-5">
-        
+      <div class="row g-4">
+        <!-- Col 1 -->
         <div class="col-lg-4 col-md-6">
           <div class="d-flex align-items-center gap-2 mb-3">
-            <img src="assets/img/favicon.svg" alt="Logo Pemuda Purwoasri" width="40" height="40" class="rounded-3 shadow-sm" />
-            <h5 class="text-white fw-bold mb-0">Pemuda Purwoasri</h5>
+            <img src="assets/img/favicon.svg" alt="Logo Pemuda Purwoasri" width="40" height="40" class="rounded-3" />
+            <h5 class="mb-0 text-white fw-bold">Pemuda Purwoasri</h5>
           </div>
           <p class="small text-secondary mb-3">
-            Organisasi kepemudaan resmi Desa Purwoasri, Kecamatan Tegaldlimo, Kabupaten Banyuwangi. Mengedepankan integritas gotong royong, karya kreatif, dan aksi kemanusiaan.
+            Organisasi resmi kepemudaan Desa Purwoasri, Kecamatan Tegaldlimo, Kabupaten Banyuwangi. Bergerak nyata untuk gotong royong warga, UMKM mandiri, olahraga, dan sosial.
           </p>
-          <div class="d-flex">
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-pill" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-pill" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-pill" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="social-pill" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <div class="footer-social">
+            <a href="https://facebook.com/pemudapurwoasri" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/pemudapurwoasri" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com/@pemudapurwoasri" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
 
+        <!-- Col 2 -->
         <div class="col-lg-2 col-md-6 col-6">
-          <h5 class="text-white fw-bold mb-3">Navigasi</h5>
-          <ul class="list-unstyled small d-flex flex-column gap-2">
-            <li><a href="/"><i class="bi bi-chevron-right text-success me-1"></i> Beranda</a></li>
-            <li><a href="tentang-kami"><i class="bi bi-chevron-right text-success me-1"></i> Tentang Kami</a></li>
-            <li><a href="kegiatan"><i class="bi bi-chevron-right text-success me-1"></i> 4 Pilar Program</a></li>
-            <li><a href="aspirasi"><i class="bi bi-chevron-right text-success me-1"></i> Aspirasi Warga</a></li>
-            <li><a href="kontak"><i class="bi bi-chevron-right text-success me-1"></i> Kontak & Alamat</a></li>
+          <h5>Menu Utama</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mt-3">
+            <li><a href="/">Beranda</a></li>
+            <li><a href="tentang-kami">Tentang Kami</a></li>
+            <li><a href="kegiatan">Program Kerja</a></li>
+            <li><a href="aspirasi">Suara Aspirasi</a></li>
+            <li><a href="kontak">Kontak Pengurus</a></li>
           </ul>
         </div>
 
+        <!-- Col 3 -->
         <div class="col-lg-3 col-md-6 col-6">
-          <h5 class="text-white fw-bold mb-3">Pilar Pengabdian</h5>
-          <ul class="list-unstyled small d-flex flex-column gap-2">
-            <li><a href="kegiatan"><i class="bi bi-chevron-right text-success me-1"></i> Gotong Royong Lingkungan</a></li>
-            <li><a href="kegiatan"><i class="bi bi-chevron-right text-success me-1"></i> Inkubasi UMKM Desa</a></li>
-            <li><a href="kegiatan"><i class="bi bi-chevron-right text-success me-1"></i> Turnamen Bola Voli</a></li>
-            <li><a href="kegiatan"><i class="bi bi-chevron-right text-success me-1"></i> Bantuan Sosial Sembako</a></li>
+          <h5>Wilayah Binaan</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mt-3">
+            <li><span class="text-light">📍 Dusun Krajan</span></li>
+            <li><span class="text-light">📍 Dusun Purwosari</span></li>
+            <li><span class="text-light">📍 Dusun Sambirejo</span></li>
+            <li><span class="text-light">📍 Dusun Gladakkembar</span></li>
+            <li><span class="text-warning">Kec. Tegaldlimo, Banyuwangi</span></li>
           </ul>
         </div>
 
+        <!-- Col 4 -->
         <div class="col-lg-3 col-md-6">
-          <h5 class="text-white fw-bold mb-3">Sekretariat</h5>
-          <address class="small text-secondary d-flex flex-column gap-3 mb-0" style="font-style: normal;">
-            <div class="d-flex align-items-start gap-2">
-              <i class="bi bi-geo-alt-fill text-warning fs-5"></i>
-              <span>Kompleks Balai Desa Purwoasri, Jl. Raya Purwoasri No. 01, Kec. Tegaldlimo, Kab. Banyuwangi 68484</span>
-            </div>
-            <div class="d-flex align-items-center gap-2">
-              <i class="bi bi-envelope-fill text-warning fs-5"></i>
-              <span>sekretariat@pemudapurwoasri.id</span>
-            </div>
-            <div class="d-flex align-items-center gap-2">
-              <i class="bi bi-whatsapp text-warning fs-5"></i>
-              <span>+62 812-3456-7890</span>
-            </div>
-          </address>
+          <h5>Sekretariat</h5>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-geo-alt-fill text-danger me-1"></i> Kompleks Balai Desa Purwoasri, Jl. Raya Purwoasri No. 01, Tegaldlimo, Banyuwangi 68484
+          </p>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-envelope-fill text-primary me-1"></i> sekretariat@pemudapurwoasri.id
+          </p>
+          <p class="small text-secondary">
+            <i class="bi bi-telephone-fill text-success me-1"></i> +62 812-3456-7890
+          </p>
         </div>
-
       </div>
 
-      <hr class="border-secondary my-4" />
-
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start small text-secondary">
-          &copy; 2026 <strong>Pemuda Purwoasri Tegaldlimo Banyuwangi</strong>. Hak Cipta Dilindungi.
-        </div>
-        <div class="col-md-6 text-center text-md-end small text-secondary mt-2 mt-md-0">
-          Dirancang untuk Kemajuan Generasi Muda Desa Purwoasri.
-        </div>
+      <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <p class="mb-0">&copy; 2026 Pemuda Purwoasri, Tegaldlimo, Banyuwangi. Seluruh hak cipta dilindungi.</p>
+        <p class="mb-0 text-secondary small">Dibangun dengan Semangat Pemuda Desa</p>
       </div>
     </div>
   </footer>
 
-  <!-- Modal Pendaftaran Relawan -->
+  <!-- Floating Action Buttons (Stacked Bottom-Right) -->
+  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="float-wa" aria-label="WhatsApp Center">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="#" class="scroll-top" id="scrollTopBtn" aria-label="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- Modal Pendaftaran Relawan (Smart WhatsApp Direct) -->
   <div class="modal fade" id="modalGabung" tabindex="-1" aria-labelledby="modalGabungLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-0 rounded-4 shadow-lg">
-        <div class="modal-header bg-primary text-white rounded-top-4 p-4">
-          <h5 class="modal-title fw-bold" id="modalGabungLabel">
-            <i class="bi bi-person-plus-fill me-2"></i> Pendaftaran Relawan Pemuda Purwoasri
-          </h5>
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header text-white p-4" style="background: linear-gradient(135deg, #e11d48, #be123c);">
+          <div>
+            <h5 class="modal-title fw-bold" id="modalGabungLabel">Pendaftaran Relawan Pemuda</h5>
+            <small class="text-white-50">Desa Purwoasri, Kec. Tegaldlimo, Kab. Banyuwangi</small>
+          </div>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
         </div>
         <div class="modal-body p-4">
-          <p class="text-muted small mb-3">
-            Mari bersama menjadi agen perubahan positif di Desa Purwoasri, Tegaldlimo. Silakan lengkapi formulir pendaftaran:
-          </p>
-          <form onsubmit="event.preventDefault(); alert('Terima kasih! Formulir pendaftaran berhasil terkirim. Pengurus akan menghubungi Anda via WhatsApp.'); bootstrap.Modal.getInstance(document.getElementById('modalGabung')).hide();">
+          <form id="formRelawan">
             <div class="mb-3">
-              <label class="form-label small fw-semibold">Nama Lengkap</label>
-              <input type="text" class="form-control rounded-3" placeholder="Contoh: Ahmad Fauzi" required />
+              <label for="relawanNama" class="form-label fw-semibold small">Nama Lengkap</label>
+              <input type="text" class="form-control rounded-3" id="relawanNama" placeholder="Contoh: Budi Santoso" required />
             </div>
             <div class="mb-3">
-              <label class="form-label small fw-semibold">Nomor WhatsApp Aktif</label>
-              <input type="tel" class="form-control rounded-3" placeholder="08xxxxxxxxxx" required />
-            </div>
-            <div class="mb-3">
-              <label class="form-label small fw-semibold">Dusun / RT / RW (Wilayah Purwoasri)</label>
-              <input type="text" class="form-control rounded-3" placeholder="Contoh: Dusun Krajan RT 03 RW 01" required />
-            </div>
-            <div class="mb-3">
-              <label class="form-label small fw-semibold">Minat & Bidang Keahlian</label>
-              <select class="form-select rounded-3">
-                <option selected>Gotong Royong & Lingkungan Hidup</option>
-                <option>Olahraga & Turnamen</option>
-                <option>Kreativitas, UMKM & Desain Digital</option>
-                <option>Sosial, Relawan Kemanusiaan & Bimbingan Belajar</option>
+              <label for="relawanDusun" class="form-label fw-semibold small">Asal Dusun</label>
+              <select class="form-select rounded-3" id="relawanDusun" required>
+                <option value="" disabled selected>Pilih Dusun</option>
+                <option value="Krajan">Dusun Krajan</option>
+                <option value="Purwosari">Dusun Purwosari</option>
+                <option value="Sambirejo">Dusun Sambirejo</option>
+                <option value="Gladakkembar">Dusun Gladakkembar</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary w-100 justify-content-center mt-2 rounded-pill py-2 fw-semibold">
-              <i class="bi bi-send-check-fill me-1"></i> Kirim Formulir Pendaftaran
+            <div class="mb-3">
+              <label for="relawanWA" class="form-label fw-semibold small">Nomor WhatsApp Aktif</label>
+              <input type="tel" class="form-control rounded-3" id="relawanWA" placeholder="08xxxxxxxxxx" required />
+            </div>
+            <div class="mb-3">
+              <label for="relawanMinat" class="form-label fw-semibold small">Minat Bidang Kegiatan</label>
+              <select class="form-select rounded-3" id="relawanMinat">
+                <option value="Olahraga">Olahraga & Turnamen</option>
+                <option value="UMKM">Inkubasi UMKM & Kewirausahaan</option>
+                <option value="Sosial">Bakti Sosial & Gotong Royong</option>
+                <option value="Media">Desain Grafis & Konten Kreator</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-hero-primary w-100 py-2 mt-2">
+              <i class="bi bi-send-fill me-1"></i> Kirim Pendaftaran via WhatsApp
             </button>
           </form>
         </div>
@@ -316,17 +327,9 @@
     </div>
   </div>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Hubungi kami via WhatsApp" title="Chat via WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-
-  <!-- Scroll To Top Button -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll ke atas">
-    <i class="bi bi-arrow-up-short fs-4"></i>
-  </a>
-
+  <!-- Vendor JS Files -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>

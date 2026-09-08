@@ -102,3 +102,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// 6. Global Category Filter for kegiatan.html
+function filterItems(category, btn) {
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  const items = document.querySelectorAll('.item-card');
+  items.forEach(item => {
+    if (category === 'all' || item.getAttribute('data-category') === category) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
