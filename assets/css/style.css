@@ -1,7 +1,8 @@
 /* =======================================================
    DESIGN TOKENS & ROOT VARIABLES
    Website Resmi Pemuda Purwoasri, Tegaldlimo, Banyuwangi
-   Theme: Bersih, Elegan, Berwibawa & Menarik (Clean White, Crimson Red & Gold Prestige)
+   Theme: Bersih, Elegan, Patriotik & Berwibawa
+   Garuda Pancasila & Semangat Merah Putih
    ======================================================= */
 :root {
   /* Merah Berani & Crimson Youth Core */
@@ -14,8 +15,9 @@
   --primary-glow: rgba(225, 29, 72, 0.15);
 
   /* Emas Prestasi & Amber Energy */
-  --accent-gold: #d97706;
+  --accent-gold: #fbbf24;
   --accent-amber: #f59e0b;
+  --accent-dark-amber: #d97706;
   --accent-light-amber: #fef3c7;
   --accent-emerald: #10b981;
   --accent-cyan: #0284c7;
@@ -28,7 +30,6 @@
   --text-dark: #0f172a;
   --text-muted: #64748b;
   --border-subtle: #e2e8f0;
-  --border-focus: rgba(225, 29, 72, 0.3);
 
   /* Multi-Generation Target Badges */
   --badge-youth-bg: #ffe4e6;
@@ -45,14 +46,60 @@
   --shadow-subtle: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
   --shadow-card: 0 10px 30px -5px rgba(15, 23, 42, 0.08);
   --shadow-float: 0 20px 45px -10px rgba(225, 29, 72, 0.18);
-  --shadow-red: 0 8px 24px rgba(225, 29, 72, 0.3);
-  --shadow-gold: 0 8px 24px rgba(245, 158, 11, 0.25);
+  --shadow-red: 0 8px 24px rgba(225, 29, 72, 0.35);
+  --shadow-gold: 0 8px 24px rgba(245, 158, 11, 0.35);
 }
 
-/* Base & Typography */
-* {
+/* =======================================================
+   STRICT NO-OVERFLOW / FULL SCREEN RESPONSIVE RESETS
+   ======================================================= */
+*, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  touch-action: pan-y;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--surface-body);
+  color: var(--text-main);
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.7;
+}
+
+.main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container, .container-fluid {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1240px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading {
@@ -62,20 +109,15 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   color: var(--text-dark);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--surface-body);
-  color: var(--text-main);
-  overflow-x: hidden;
-  line-height: 1.7;
-}
-
 a {
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* =======================================================
@@ -106,7 +148,7 @@ a {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid #e2e8f0;
-  padding: 0.9rem 0;
+  padding: 0.85rem 0;
   transition: all 0.35s ease;
   z-index: 1030;
 }
@@ -114,7 +156,7 @@ a {
 .navbar-glass.scrolled {
   background: #ffffff;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-  padding: 0.7rem 0;
+  padding: 0.65rem 0;
 }
 
 .navbar-brand .brand-title-wrap .title {
@@ -129,7 +171,7 @@ a {
 .navbar-brand .brand-title-wrap .sub {
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--accent-gold);
+  color: var(--accent-dark-amber);
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
@@ -155,7 +197,7 @@ a {
 }
 
 /* =======================================================
-   BUTTONS (CLEAN & MODERN)
+   BUTTONS (YOUTH ENERGY & GLOW)
    ======================================================= */
 .btn-hero-primary, .btn-primary {
   background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
@@ -174,7 +216,50 @@ a {
 .btn-hero-primary:hover, .btn-primary:hover {
   background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(225, 29, 72, 0.35);
+  box-shadow: 0 12px 28px rgba(225, 29, 72, 0.45);
+}
+
+.btn-hero-gold {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  padding: 0.85rem 2rem;
+  border: none;
+  box-shadow: var(--shadow-gold);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-hero-gold:hover {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.45);
+}
+
+.btn-hero-glass, .btn-outline-glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  padding: 0.85rem 2rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-hero-glass:hover, .btn-outline-glass:hover {
+  background: #ffffff;
+  color: #0f172a !important;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
 }
 
 .btn-outline-clean {
@@ -199,240 +284,169 @@ a {
 }
 
 /* =======================================================
-   HERO SECTION (CLEAN 2-COLUMN ELEGANT DESIGN)
+   HERO SECTION (FULL BACKGROUND GARUDA PANCASILA & MERDEKA)
    ======================================================= */
-.hero-clean-section {
+.hero-garuda-section {
   position: relative;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-  padding: 70px 0 60px 0;
-  border-bottom: 1px solid #e2e8f0;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding: 100px 0 80px 0;
+  background-image: url('../img/hero-garuda.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
-.hero-tag-clean {
+.hero-garuda-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, 
+    rgba(15, 23, 42, 0.72) 0%, 
+    rgba(15, 23, 42, 0.82) 45%, 
+    rgba(15, 23, 42, 0.95) 100%
+  );
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  z-index: 1;
+}
+
+.hero-garuda-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-tag-garuda {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--primary-light);
-  border: 1px solid rgba(225, 29, 72, 0.2);
-  color: var(--primary-crimson);
-  padding: 0.45rem 1.15rem;
+  background: rgba(251, 191, 36, 0.18);
+  border: 1px solid rgba(251, 191, 36, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fef08a;
+  padding: 0.5rem 1.35rem;
   border-radius: var(--radius-pill);
   font-weight: 700;
   font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
   margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
 }
 
-.hero-title-clean {
-  font-size: 3.35rem;
+.hero-title-garuda {
+  font-size: 3.4rem;
   font-weight: 900;
-  line-height: 1.18;
-  color: var(--text-dark);
-  margin-bottom: 1.25rem;
-  letter-spacing: -0.03em;
+  line-height: 1.16;
+  color: #ffffff;
+  margin-bottom: 1.35rem;
+  letter-spacing: -0.025em;
 }
 
-.text-gradient-red {
-  color: var(--primary-red);
-  position: relative;
-  display: inline-block;
+.hero-title-garuda span {
+  background: linear-gradient(135deg, #fbbf24 0%, #fde047 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(251, 191, 36, 0.35);
 }
 
-.hero-subtitle-clean {
-  font-size: 1.15rem;
-  color: #475569;
-  margin-bottom: 2rem;
-  line-height: 1.75;
-  max-width: 580px;
+.hero-subtitle-garuda {
+  font-size: 1.18rem;
+  color: #f1f5f9;
+  margin-bottom: 2.25rem;
+  max-width: 680px;
+  line-height: 1.8;
 }
 
-.hero-buttons-clean {
+.hero-buttons-garuda {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
-/* Hero Trust Social Proof */
-.hero-trust-bar {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid #e2e8f0;
-}
-
-.hero-avatar-stack {
-  display: flex;
-  align-items: center;
-}
-
-.hero-avatar-stack img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #ffffff;
-  margin-left: -10px;
-  object-fit: cover;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.hero-avatar-stack img:first-child {
-  margin-left: 0;
-}
-
-.hero-trust-text {
-  font-size: 0.875rem;
-  color: #475569;
-  font-weight: 600;
-  line-height: 1.35;
-}
-
-.hero-trust-text strong {
-  color: var(--text-dark);
-  display: block;
-}
-
-/* Hero Showcase Image & Floating Badges */
-.hero-image-wrap {
-  position: relative;
-  padding: 1rem;
-}
-
-.hero-main-img {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-card);
-  border: 4px solid #ffffff;
-}
-
-.floating-badge {
-  position: absolute;
-  background: #ffffff;
+/* Hero Stats Bar in Full Background */
+.hero-stats-garuda {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-card);
-  padding: 0.85rem 1.25rem;
-  box-shadow: var(--shadow-card);
-  border: 1px solid #e2e8f0;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  z-index: 3;
-  animation: floatAnim 4s ease-in-out infinite;
+  padding: 1.75rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-.floating-badge-top {
-  top: 10%;
-  right: -10px;
+.hero-stat-box {
+  text-align: center;
+  position: relative;
 }
 
-.floating-badge-bottom {
-  bottom: 8%;
-  left: -10px;
-  animation-delay: 2s;
+.hero-stat-box:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.badge-icon-box {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-}
-
-.badge-icon-red {
-  background: var(--primary-light);
-  color: var(--primary-red);
-}
-
-.badge-icon-gold {
-  background: var(--accent-light-amber);
-  color: var(--accent-gold);
-}
-
-.floating-badge-title {
+.hero-stat-number {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.3rem;
   font-weight: 800;
-  font-size: 0.95rem;
-  color: var(--text-dark);
-  line-height: 1.1;
-  margin-bottom: 2px;
+  color: #fbbf24;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+  text-shadow: 0 0 20px rgba(251, 191, 36, 0.35);
 }
 
-.floating-badge-sub {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-@keyframes floatAnim {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
+.hero-stat-label {
+  font-size: 0.825rem;
+  color: #e2e8f0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* =======================================================
-   STATISTICS BAR (CLEAN & ELEGANT 4-CARD GRID)
+   INNER PAGE HERO HEADERS
    ======================================================= */
-.stats-section {
-  padding: 30px 0;
-  background: #ffffff;
-  border-bottom: 1px solid #e2e8f0;
+.page-header {
+  position: relative;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #334155 100%);
+  color: #ffffff;
+  padding: 80px 0 55px 0;
+  overflow: hidden;
+  border-bottom: 3px solid var(--primary-red);
 }
 
-.stat-card-clean {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: var(--radius-card);
-  padding: 1.5rem 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  transition: all 0.3s ease;
-  box-shadow: var(--shadow-subtle);
-}
-
-.stat-card-clean:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card);
-  border-color: rgba(225, 29, 72, 0.25);
-}
-
-.stat-icon-wrap {
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  flex-shrink: 0;
-}
-
-.stat-number-clean {
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.95rem;
+.page-header h1 {
+  font-size: 2.6rem;
   font-weight: 900;
-  color: var(--text-dark);
-  line-height: 1.1;
-  margin-bottom: 0.2rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
 }
 
-.stat-label-clean {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  font-weight: 600;
+.page-header p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  max-width: 620px;
 }
 
 /* =======================================================
    SECTION TITLES & HEADINGS
    ======================================================= */
 .section {
-  padding: 85px 0;
+  padding: 80px 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .section-tag {
@@ -778,9 +792,11 @@ a {
 .footer-dark {
   background: #0f172a;
   color: #cbd5e1;
-  padding: 85px 0 35px 0;
+  padding: 80px 0 30px 0;
   border-top: 3px solid var(--primary-red);
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .footer-dark h5 {
@@ -834,41 +850,43 @@ a {
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 2rem;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   font-size: 0.85rem;
   color: #64748b;
 }
 
 /* =======================================================
-   FLOATING BUTTONS (WHATSAPP & SCROLL TOP)
+   FLOATING ACTION BUTTONS (WHATSAPP & ROLLBACK STACKED)
    ======================================================= */
+/* 1. WhatsApp Button (Bottom-Right) */
 .float-wa {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 24px;
+  right: 24px;
   background: #25d366;
   color: #ffffff !important;
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.85rem;
-  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-  z-index: 1040;
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  z-index: 1050;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .float-wa:hover {
-  transform: scale(1.08);
-  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.55);
+  transform: scale(1.1);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.6);
 }
 
+/* 2. Rollback / Scroll-Top Button (DIRECTLY ABOVE WHATSAPP) */
 .scroll-top {
   position: fixed;
-  bottom: 30px;
-  left: 30px;
+  bottom: 90px; /* Stacked right above WhatsApp button! */
+  right: 28px;
   background: var(--primary-red);
   color: #ffffff !important;
   width: 48px;
@@ -878,11 +896,11 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.3);
-  z-index: 1040;
+  box-shadow: 0 6px 18px rgba(225, 29, 72, 0.35);
+  z-index: 1049;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-top.active {
@@ -892,54 +910,37 @@ a {
 
 .scroll-top:hover {
   background: #be123c;
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(225, 29, 72, 0.45);
 }
 
 /* =======================================================
-   RESPONSIVE DESIGN (MOBILE, TABLET & DESKTOP OPTIMIZATIONS)
+   RESPONSIVE DESIGN (MOBILE, TABLET & DESKTOP FULL VIEW)
    ======================================================= */
 
-/* Tablet & Smaller (<= 991px) */
+/* Tablet (<= 991.98px) */
 @media (max-width: 991.98px) {
-  .hero-clean-section {
-    padding: 45px 0 40px 0;
-    text-align: center;
+  .hero-garuda-section {
+    padding: 80px 0 60px 0;
+    min-height: auto;
   }
 
-  .hero-title-clean {
-    font-size: 2.5rem;
+  .hero-title-garuda {
+    font-size: 2.6rem;
   }
 
-  .hero-subtitle-clean {
-    margin-left: auto;
-    margin-right: auto;
+  .hero-subtitle-garuda {
     font-size: 1.05rem;
   }
 
-  .hero-buttons-clean {
-    justify-content: center;
+  .hero-stats-garuda {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem;
+    gap: 1.25rem;
   }
 
-  .hero-trust-bar {
-    justify-content: center;
-  }
-
-  .hero-image-wrap {
-    padding: 0;
-    margin-top: 1rem;
-  }
-
-  .hero-main-img {
-    height: 350px;
-    border-radius: var(--radius-card);
-  }
-
-  .floating-badge {
-    position: static;
-    margin-top: 0.75rem;
-    animation: none;
-    display: inline-flex;
-    text-align: left;
+  .hero-stat-box:nth-child(2)::after {
+    display: none;
   }
 
   .navbar-collapse {
@@ -967,7 +968,7 @@ a {
 /* Mobile Devices (<= 767.98px) */
 @media (max-width: 767.98px) {
   .section {
-    padding: 60px 0;
+    padding: 55px 0;
   }
 
   .section-title {
@@ -978,28 +979,12 @@ a {
     font-size: 0.95rem;
   }
 
-  .hero-main-img {
-    height: 280px;
+  .hero-title-garuda {
+    font-size: 2.15rem;
   }
 
-  .stat-card-clean {
-    padding: 1.15rem 0.85rem;
-    gap: 0.85rem;
-  }
-
-  .stat-icon-wrap {
-    width: 44px;
-    height: 44px;
-    border-radius: 10px;
-    font-size: 1.25rem;
-  }
-
-  .stat-number-clean {
-    font-size: 1.45rem;
-  }
-
-  .stat-label-clean {
-    font-size: 0.75rem;
+  .hero-subtitle-garuda {
+    font-size: 0.95rem;
   }
 
   .gallery-item {
@@ -1019,68 +1004,77 @@ a {
   }
 
   .float-wa {
-    bottom: 20px;
-    right: 20px;
+    bottom: 18px;
+    right: 18px;
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
   }
 
   .scroll-top {
-    bottom: 20px;
-    left: 20px;
-    width: 42px;
-    height: 42px;
+    bottom: 76px;
+    right: 21px;
+    width: 44px;
+    height: 44px;
     font-size: 1.1rem;
   }
 }
 
 /* Small Mobile (<= 575.98px) */
 @media (max-width: 575.98px) {
-  .hero-clean-section {
-    padding: 30px 0;
+  .hero-garuda-section {
+    padding: 65px 0 50px 0;
   }
 
-  .hero-tag-clean {
+  .hero-tag-garuda {
     font-size: 0.75rem;
     padding: 0.35rem 0.85rem;
+    margin-bottom: 1rem;
   }
 
-  .hero-title-clean {
-    font-size: 1.95rem;
-    line-height: 1.25;
+  .hero-title-garuda {
+    font-size: 1.85rem;
+    line-height: 1.22;
   }
 
-  .hero-subtitle-clean {
-    font-size: 0.92rem;
+  .hero-subtitle-garuda {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
   }
 
-  .hero-buttons-clean {
+  .hero-buttons-garuda {
     flex-direction: column;
     width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
   }
 
-  .hero-buttons-clean .btn {
+  .hero-buttons-garuda .btn {
     width: 100%;
     justify-content: center;
   }
 
-  .hero-trust-bar {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
+  .hero-stats-garuda {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.25rem 1rem;
+    gap: 1rem;
   }
 
-  .hero-main-img {
-    height: 220px;
+  .hero-stat-number {
+    font-size: 1.75rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.72rem;
   }
 
   .gen-card, .testi-card, .program-body {
-    padding: 1.5rem 1.25rem;
+    padding: 1.35rem 1.15rem;
   }
 
   .program-img-wrap {
-    height: 190px;
+    height: 180px;
   }
 
   .cta-banner-clean {
