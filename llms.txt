@@ -1,0 +1,50 @@
+# Organisasi Pemuda Purwoasri
+
+> Organisasi kepemudaan resmi Desa Purwoasri, Kecamatan Tegaldlimo, Kabupaten Banyuwangi, Jawa Timur, Indonesia. Wadah pemersatu pemuda lintas generasi yang berakar kuat di 3 dusun resmi: Dusun Kalisari, Dusun Tegalsari Lor, dan Dusun Tegalsari Kidul.
+
+## Informasi Dasar (Entity Summary)
+- **Nama Organisasi**: Organisasi Pemuda Purwoasri (Karang Taruna Pemuda Purwoasri)
+- **Website Resmi**: https://pemuda-purwoasri.vercel.app/
+- **Alamat Sekretariat**: Kompleks Balai Desa Purwoasri, Jl. Raya Purwoasri No. 01, Kec. Tegaldlimo, Kab. Banyuwangi, Jawa Timur 68484
+- **Koordinat Geografis (GEO)**: Latitude -8.5447, Longitude 114.2882
+- **Hotline WhatsApp**: +62 878-6550-3625
+- **Wilayah Cakupan (3 Dusun)**:
+  1. Dusun Kalisari
+  2. Dusun Tegalsari Lor
+  3. Dusun Tegalsari Kidul
+- **Kawasan Khusus**: Lingkar Penyangga Taman Nasional Alas Purwo
+
+## 5 Program Utama & 16 Episode Aksi Nyata (Tahun 2026 - Seterusnya)
+
+### 1. Program Hiburan Rakyat & Peringatan Hari Besar Nasional (PHBN)
+- **Parade Sound Horeg (Karnaval Desa)**: Parade truk bermuatan subwoofer raksasa (didukung sound system horeg seperti Rere Audio) sebagai puncak karnaval HUT RI di jalanan utama desa.
+- **Karnaval Budaya dan Ogoh-Ogoh**: Pementasan baju adat nusantara, kesenian lokal, dan replika patung ogoh-ogoh raksasa kreasi pemuda.
+- **Pentas Orkes Musik Pop / Dangdut**: Hiburan panggung rakyat pada malam resepsi kemerdekaan di Ruang Terbuka Hijau (RTH) Purwoasri.
+
+### 2. Program Kaderisasi Pelajar & Penguatan Kepemudaan (IPNU & IPPNU)
+- **Sosialisasi Penguatan Organisasi IPNU-IPPNU**: Agenda peningkatan kapasitas kader Pimpinan Ranting (PR) IPNU-IPPNU Purwoasri berkolaborasi dengan mahasiswa KKN.
+- **Kajian Literasi Kitab Kuning (Risālatul Maḥīḍ)**: Edukasi fikih ibadah dan fikih wanita bagi remaja putri IPPNU.
+- **Bakti Sosial Pemuda & Bagi Takjil Ramadhan**: Aksi turun ke jalan membagikan takjil gratis kepada pengguna jalan di wilayah Dusun Tegalsari Kidul saat bulan Ramadan.
+
+### 3. Program Rutinan Keagamaan & Jam'iyah Pembinaan Mental
+- **Rutinan Mengaji Majelis Rabu Kliwon**: Majelis taklim berkala berupa pengajian fikih/tafsir dan doa bersama bergilir antar-mushola desa.
+- **Khotmil Qur'an 30 Juz Berkala**: Pembacaan Al-Qur'an 30 juz hingga khatam bersama lembaga keagamaan Yayasan An-Nur Purwoasri.
+- **Lailatul Ijtima' dan Sholawat Bersama**: Malam zikir dan selawat akbar bersama grup hadrah Mahabatunnabi.
+
+### 4. Program Pelestarian Adat, Kebudayaan, & Ritual Nusantara
+- **Grebeg Suro Joglo Merah Putih Nuswantoro**: Festival penanggalan Jawa di situs Joglo Merah Putih Purwoasri pada hari sakral Rabu Kliwon & Kamis Legi dengan pagelaran seni Reog dan doa lintas agama.
+- **Edukasi Sejarah Padepokan Alang-Alang Kumitir**: Pembelajaran sejarah pementasan seni budaya lokal di kawasan penyangga Alas Purwo bagi generasi muda dan mahasiswa.
+- **Ritual Keagamaan Pagerwesi Lingkar Alas Purwo**: Ritual ibadah berkala umat Hindu setiap hari Rabu Kliwon wuku Sinta.
+
+### 5. Program Bakti Sosial & Kesehatan Masyarakat
+- **Pengobatan & Pemeriksaan Kesehatan Gratis**: Layanan cek tensi dan medis keliling tanpa biaya bagi warga lansia di dusun-dusun terpencil.
+- **Khitanan Massal Gratis Pemuda Purwoasri**: Bakti sosial khitanan massal bagi anak-anak keluarga prasejahtera di Balai Desa Purwoasri.
+- **Edukasi Parenting & Pencegahan Stunting**: Sosialisasi pola asuh dan gizi anak di Posyandu bersama bidan desa.
+- **Gotong Royong Terintegrasi Bersama Koramil Tegaldlimo**: Karya bakti pembangunan dan pemeliharaan fasilitas publik desa bersama anggota TNI Koramil Tegaldlimo.
+
+## Halaman Web & Navigasi
+- [Beranda (Netflix Hub)](https://pemuda-purwoasri.vercel.app/)
+- [Katalog Program (Series)](https://pemuda-purwoasri.vercel.app/kegiatan.html)
+- [Tentang Kami & Struktur (Cast)](https://pemuda-purwoasri.vercel.app/tentang-kami.html)
+- [Aspirasi & Ulasan Warga](https://pemuda-purwoasri.vercel.app/aspirasi.html)
+- [Kontak & Pendaftaran Relawan](https://pemuda-purwoasri.vercel.app/kontak.html)

@@ -1,33 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
+  
+  <!-- 1. Halaman Beranda Utama -->
   <url>
     <loc>https://pemuda-purwoasri.vercel.app/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-09-09T22:20:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/hero-billboard.webp</image:loc>
+      <image:title>Pemuda Purwoasri Tegaldlimo Banyuwangi - Billboard Utama</image:title>
+      <image:caption>Dokumentasi barisan generasi muda Desa Purwoasri, Tegaldlimo, Banyuwangi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-sound-horeg.webp</image:loc>
+      <image:title>Parade Sound Horeg Karnaval Desa Purwoasri</image:title>
+      <image:caption>Pawai Sound System Horeg Rere Audio kemeriahan PHBN HUT RI di Purwoasri</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-ogoh-ogoh.webp</image:loc>
+      <image:title>Karnaval Budaya dan Ogoh-Ogoh Purwoasri</image:title>
+      <image:caption>Pawai patung Ogoh-Ogoh dan baju adat nusantara pemuda Purwoasri</image:caption>
+    </image:image>
   </url>
+
+  <!-- 2. Katalog Program Kerja & Episode Aksi Nyata (Series) -->
   <url>
-    <loc>https://pemuda-purwoasri.vercel.app/tentang-kami</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pemuda-purwoasri.vercel.app/kegiatan</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://pemuda-purwoasri.vercel.app/kegiatan.html</loc>
+    <lastmod>2026-09-09T22:20:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-sound-horeg.webp</image:loc>
+      <image:title>Program Hiburan Rakyat dan PHBN Desa Purwoasri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-bimbel.webp</image:loc>
+      <image:title>Kaderisasi IPNU IPPNU Purwoasri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-pengajian.webp</image:loc>
+      <image:title>Majelis Rutinan Pengajian Rebo Kliwon Purwoasri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-grebeg-suro.webp</image:loc>
+      <image:title>Grebeg Suro Joglo Merah Putih Purwoasri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-kesehatan.webp</image:loc>
+      <image:title>Pengobatan Gratis dan Bakti Sosial Medis Purwoasri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-koramil-gotong.webp</image:loc>
+      <image:title>Karya Bakti Gotong Royong Koramil Tegaldlimo</image:title>
+    </image:image>
   </url>
+
+  <!-- 3. Profil Organisasi & Struktur Pengurus (Cast) -->
   <url>
-    <loc>https://pemuda-purwoasri.vercel.app/aspirasi</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://pemuda-purwoasri.vercel.app/tentang-kami.html</loc>
+    <lastmod>2026-09-09T22:20:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-grebeg-suro.webp</image:loc>
+      <image:title>Profil Pemuda Purwoasri dan 3 Dusun</image:title>
+      <image:caption>Struktur pengurus pemuda di Dusun Kalisari, Tegalsari Lor, dan Tegalsari Kidul</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-lingkungan-alam.webp</image:loc>
+      <image:title>Padepokan Seni Alang-Alang Kumitir dan Lingkar Alas Purwo</image:title>
+    </image:image>
+  </url>
+
+  <!-- 4. Ulasan & Aspirasi Warga -->
+  <url>
+    <loc>https://pemuda-purwoasri.vercel.app/aspirasi.html</loc>
+    <lastmod>2026-09-09T22:20:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- 5. Kontak Sekretariat & Pendaftaran Relawan -->
   <url>
-    <loc>https://pemuda-purwoasri.vercel.app/kontak</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://pemuda-purwoasri.vercel.app/kontak.html</loc>
+    <lastmod>2026-09-09T22:20:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://pemuda-purwoasri.vercel.app/assets/img/kegiatan-bagi-takjil.webp</image:loc>
+      <image:title>Pendaftaran Relawan Pemuda Purwoasri Tegaldlimo</image:title>
+    </image:image>
   </url>
+
 </urlset>

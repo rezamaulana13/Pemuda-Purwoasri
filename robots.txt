@@ -1,4 +1,72 @@
+# =======================================================
+# ROBOTS.TXT - PEMUDA PURWOASRI
+# Domain: https://pemuda-purwoasri.vercel.app
+# Desa Purwoasri, Kec. Tegaldlimo, Kab. Banyuwangi
+# =======================================================
+
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Disallow: /api/
+Disallow: /scratch/
+Disallow: /draft/
 
+# Major Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/img/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AEO & AI Search Crawlers (ChatGPT, Perplexity, Claude, Gemini, Copilot)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap Index
 Sitemap: https://pemuda-purwoasri.vercel.app/sitemap.xml
+Host: https://pemuda-purwoasri.vercel.app
